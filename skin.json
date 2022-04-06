@@ -5,7 +5,7 @@
 	"descriptionmsg": "pure-desc",
 	"namemsg": "skinname-pure",
 	"license-name": "GPL-2.0+",
-    "requires": {
+	"requires": {
 		"MediaWiki": ">= 1.35.0"
 	},
 	"manifest_version": 2,
@@ -20,25 +20,25 @@
 	"MessagesDirs": {
 		"FooBar": "i18n"
 	},
-    "ResourceModules": {
+	"ResourceModules": {
 		"skins.pure.styles":  {
-            "position": "top",
-            "styles": [
+			"position": "top",
+			"styles": [
 				"assets/css/bulma.min.css",
 				"assets/font-awesome/css/font-awesome.min.css",
-                "assets/css/pure.css",
+				"assets/css/pure.css",
 				"assets/css/dracula.css"
-            ]
-        },
-        "skins.pure.js":  {
-            "position": "bottom",
-            "scripts": [
-                "assets/js/init.js"
-            ],
-            "dependencies": [
-                "jquery.cookie"
-            ]
-        }
+			]
+		},
+		"skins.pure.js":  {
+			"position": "bottom",
+			"scripts": [
+				"assets/js/init.js"
+			],
+			"dependencies": [
+				"jquery.cookie"
+			]
+		}
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",

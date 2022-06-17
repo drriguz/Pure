@@ -62,8 +62,11 @@
                     <a class="navbar-link"><i class="fa fa-user"></i></a>
                     <div class="navbar-dropdown is-right">
                         <?php foreach ($this->getPersonalTools() as $key => $item) {
-                            foreach ($item['links'] as $linkKey => $link) {
-                                echo $this->makeLink($linkKey, $link, array('link-class' => 'navbar-item'));
+                            foreach ($item['links'] ?? [] as $linkKey => $link) {
+                                $href = $link['href'] ?? null;
+                                if ( $href ) {
+                                    echo $this->makeLink($linkKey, $link, array('link-class' => 'navbar-item'));
+                                }
                             }
                         } ?>
                     </div>

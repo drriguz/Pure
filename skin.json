@@ -20,6 +20,15 @@
 					"template": "PureTemplate",
 					"name": "pure",
 					"responsive": true,
+					"menus": [
+						"associated-pages",
+						"views",
+						"actions",
+						"user-menu",
+						"notifications",
+						"user-interface-preferences",
+						"user-page"
+					],
 					"styles": [
 						"skins.pure.styles"
 					],
@@ -31,7 +40,6 @@
 		}
 	},
 	"AutoloadClasses": {
-		"SkinPure": "Pure.skin.php",
         "PureTemplate": "Pure.template.php"
 	},
 	"MessagesDirs": {
@@ -39,8 +47,7 @@
 	},
 	"ResourceModules": {
 		"skins.pure.styles":  {
-			"position": "top",
-			"class": "ResourceLoaderSkinModule",
+			"class": "MediaWiki\\ResourceLoader\\SkinModule",
 			"features": {
 				"interface": true,
 				"interface-message-box": true,
@@ -54,7 +61,6 @@
 			]
 		},
 		"skins.pure.js":  {
-			"position": "bottom",
 			"scripts": [
 				"assets/js/init.js"
 			],

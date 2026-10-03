@@ -61,7 +61,7 @@
                 <div class="navbar-item has-dropdown is-hoverable">
                     <a class="navbar-link"><i class="fa fa-user"></i></a>
                     <div class="navbar-dropdown is-right">
-                        <?php foreach ($this->getPersonalTools() as $key => $item) {
+                        <?php foreach ($this->getPersonalToolsClassic() as $key => $item) {
                             foreach ($item['links'] ?? [] as $linkKey => $link) {
                                 $href = $link['href'] ?? null;
                                 if ( $href ) {
